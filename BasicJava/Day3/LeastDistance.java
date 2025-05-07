@@ -8,14 +8,14 @@ public class LeastDistance{
         int m = sc.nextInt();
         
         int a = num/m;
-        int small = a * m;
-        int large = small + m;
-        if (num - small < large - num){
-            System.out.println(small);
-        }else if (num - small > large - num){
-            System.out.println(large);
+        int upper = a * m;
+        int lower = (a+1)*m;
+        if (num - upper < lower - num){
+            System.out.println(upper);
+        }else if (num - upper > lower - num){
+            System.out.println(lower);
         }else{
-            System.out.println(large);
+            System.out.println(lower);
         }
         sc.close();
          
