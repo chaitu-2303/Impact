@@ -22,9 +22,8 @@ public class AdamNumber {
             revsq = revsq / 10; 
         }
         if (sq == revsqrev) {
-            System.out.println("Adam Number");
-        } else {
-            System.out.println("Not an Adam Number");
-        }
+            
     }
+}
+
 }
