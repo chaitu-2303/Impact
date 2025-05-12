@@ -6,28 +6,30 @@ public class Acc2021CubicSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int arr[] = new int[n];
+        int[] arr = new int[n];
+        int count = 0;
+
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
-            if (isSumOfTwoCubes(arr[i])) {
-                System.out.println(arr[i] + " is a good integer");
-            } else {
-                System.out.println(arr[i] + " is not a good integer");
-            }
         }
-        sc.close();
-    }
 
-    static boolean isSumOfTwoCubes(int num) {
-        for (int x = 1; x * x * x <= num; x++) {
-            int yCube = num - x * x * x;
-            if (yCube > 0) {
-                int y = (int) Math.round(Math.cbrt(yCube));
-                if (y * y * y == yCube) {
-                    return true;
+        for (int i = 0; i < n; i++) {
+            int x = 1;
+            int y = arr[i]; 
+            while (x <= y) {
+                int z = (int) (Math.pow(x, 3) + Math.pow(y, 3));
+                if (z == arr[i]) {
+                    count++;
+                    break; 
+                } else if (z > arr[i]) {
+                    y--;
+                } else {
+                    x++; 
                 }
             }
         }
-        return false;
+
+        System.out.println(count);
+        sc.close();
     }
 }
