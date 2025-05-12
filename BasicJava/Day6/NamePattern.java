@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class NamePattern {
     public static void printPattern(int n) {
-        char[] letters = {'C', 'H', 'A', 'I', 'T'};
+        char[] letters = {'C', 'H', 'A', 'I'};
         int i, j;
         for (i = 0; i < n; i++) {
             for (j = 0; j < n - i - 1; j++) {
