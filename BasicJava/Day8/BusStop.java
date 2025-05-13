@@ -6,25 +6,25 @@ public class BusStop
 {
     public static void main(String[] args) 
     {
-        Scanner in=new Scanner(System.in);
-        int num=in.nextInt();
-        int m=in.nextInt();
-        int arr[]=new int[num];
-        for(int i=0;i<num;i++)
+        Scanner sc =new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++)
         {
-            arr[i]=in.nextInt();
+            arr[i] = sc.nextInt();
          }
-    int bus=1;
-    int sum=0;
-    for(int i=0;i<num;i++)
+    int bus = 1;
+    int sum = 0;
+    for(int i = 0; i < n; i++)
     {
-        if(sum+arr[i]<=m)
+        if(sum + arr[i] <= m)
         {
-            sum+=arr[i];
+            sum += arr[i];
         }
         else
         {
-            sum=arr[i];
+            sum = arr[i];
             bus++;
         }
     }
