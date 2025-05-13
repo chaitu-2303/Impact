@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HeightAndWeight {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter no.of Persons and there height and weight: ");
+        System.out.println("Enter no.of Persons and there height's and weight's: ");
         int n = sc.nextInt();
         int[] arr = new int[2 * n]; 
         for (int i = 0; i < 2 * n; i++) { 
