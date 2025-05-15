@@ -26,7 +26,13 @@ public class AddTwoNumbers {
         for(int i = 0; i < n; i++){
             result1=(result1*10)+arr1[i];
         }
-        for()
+        for(int j=0;j<m;j++){
+            result2=(result2*10)+arr2[j];
+        }
+        System.out.println("First array: " +result1);
+        System.out.println("First array: " +result1);
+        int sum=result1+result2;
+        System.out.println("Sum of two numbers: "+sum);
         sc.close();
     }
 }
