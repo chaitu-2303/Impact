@@ -1,4 +1,4 @@
-package BasicJava.Day3;
+package Day3;
 
 import java.util.Scanner;
 public class LeastDistance{
