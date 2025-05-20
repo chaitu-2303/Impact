@@ -2,7 +2,7 @@ package BasicJava.Day13;
 
 import java.util.Scanner;
 
-public class NumberVowelsInStrin {
+public class NumberVowelsInString {
        public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a string: ");
