@@ -101,7 +101,7 @@ public class Superclass
 {
     public static void main(String[] args) 
     {
-        Manager manager = new Manager(2004, "Chaitanya", 10000000, 5000000);
+        Manager manager = new Manager(2004, "Chaitanya", 9000000, 5000000);
         Developer developer = new Developer(2003, "Sai", 5000000, 500000);
         Employee employee = new Employee(2005, "Mohan", 300000);
 
